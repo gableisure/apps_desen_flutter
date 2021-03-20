@@ -43,37 +43,7 @@ class _BasicsPageState extends State<BasicsPage> {
       itemCount: items.length,
       itemBuilder: (context, index) {
         return TextButton(
-            onPressed: () {
-              showModalBottomSheet<void>(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(35), topRight: Radius.circular(35)),
-                ),
-                context: context,
-                builder: (BuildContext context) {
-                  return Container(
-                    padding: EdgeInsets.only(top: 30),
-
-                    child: Center(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                              "Guilherme Silva Freitas",
-                              textAlign: TextAlign.end,
-                              style: TextStyle(
-                                fontSize: 27.0,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w800,
-                              ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  );
-                },
-              );
-            },
+          onPressed: () {},
           child: ListTile(
             leading: Icon(
                 Icons.person,

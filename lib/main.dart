@@ -1,5 +1,4 @@
-import 'package:app_desenvolvimento/easypersonal/page.main.professor.dart';
-import 'package:app_desenvolvimento/tabbar/basic.main.dart';
+import 'package:app_desenvolvimento/easypersonal//basic.main.dart';
 import 'package:flutter/material.dart';
 import 'buttons/page.main.dart';
 
