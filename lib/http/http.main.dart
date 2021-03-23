@@ -15,12 +15,12 @@ class HttpMain extends StatefulWidget {
 }
 
 class _HttpMainState extends State<HttpMain> {
-  final uri = "10.0.2.2:8082";
+  final uri = "api-easy-personal-dsv.herokuapp.com";
   List data;
   List usersData;
 
   getLinguagens() async {
-    http.Response response = await http.get(Uri.http(uri, ""));
+    http.Response response = await http.get(Uri.https(uri, "/professores"));
     data = json.decode(response.body);
     setState(() {
       usersData = data;
@@ -49,7 +49,7 @@ class _HttpMainState extends State<HttpMain> {
                 Container(
                   height: 50,
                   padding: EdgeInsets.all(15),
-                  child: Text("${usersData[index]["linguagem"]}"),
+                  child: Text("${usersData[index]["vhr_nome"]}"),
                 ),
 
               ],
