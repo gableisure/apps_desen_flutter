@@ -1,6 +1,8 @@
 import 'package:app_desenvolvimento/easypersonal//basic.main.dart';
 import 'package:flutter/material.dart';
 import 'buttons/page.main.dart';
+import 'http/http.main.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BasicsPage(),
+      home: HttpMain(),
     );
   }
 }
