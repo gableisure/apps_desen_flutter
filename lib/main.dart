@@ -2,6 +2,7 @@ import 'package:app_desenvolvimento/easypersonal//basic.main.dart';
 import 'package:app_desenvolvimento/easypersonal/req.api.dart';
 import 'package:flutter/material.dart';
 import 'buttons/page.main.dart';
+import 'easypersonal/req.api2.dart';
 import 'http/http.main.dart';
 
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ReqAPI(),
+      home: ReqAPI2(),
     );
   }
 }
